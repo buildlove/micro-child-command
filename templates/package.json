@@ -1,0 +1,35 @@
+{
+  "name": "react17",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "customize-cra": "^1.0.0",
+    "less-loader": "6.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^3.4.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  },
+  "devDependencies": {
+    "antd": "^4.2.0",
+    "babel-plugin-import": "^1.13.0",
+    "react-app-rewired": "^2.1.6",
+    "react-router-dom": "^5.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
