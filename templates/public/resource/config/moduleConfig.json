@@ -1,0 +1,10 @@
+{
+  "login": {
+    "name": "login",
+    "script": "/micro-login/static/js/micro-login.js",
+    "style": "/micro-login/static/css/micro-login.css",
+    "appTitle": "登录",
+    "appType": "0",
+    "version": "1.0.0"
+  }
+}

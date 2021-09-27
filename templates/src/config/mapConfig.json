@@ -1,0 +1,68 @@
+{
+  "mapOpts": {
+    "minZoom": 7.5,
+    "defaultZoom": 7.93667836835698,
+    "maxZoom": 18,
+    "antialias": true,
+    "bearing":9.599999999999683,
+    "pitch":43.000000000000014,
+    "centerPoint": [112.34339091037417, 38.80938497829215],
+    "restrictedExtent": [108.92063514202187, 36.98769447371307, 115.75413123672242, 40.683193153487224]
+  },
+  "vectorLayer": [{
+    "layerName": "gaodexian",
+    "layerType": "ZenMap.Layers.GaoDeLayer",
+    "layerOpt": {
+      "url": ["/zenviewMap/zenview/mapbox/services/chinaMapboxDemo/MapServer/getMapboxVectorTile?&classic=true&L={z}&Y={y}&X={x}"],
+      "type": "vector",
+      "minZoom": 5,
+      "maxZoom": 18
+    }
+  }],
+  "sattilateLayer": [],
+  "url":"/zenviewMap/zenview/",
+  "zMapOpt": {
+    "mapOpts": {
+      "minZoom": 4,
+      "defaultZoom": 4,
+      "maxZoom": 17,
+      "centerPoint": [105.22757357171984, 36.28002287498697],
+      "restrictedExtent": [49.527412746049045, 3.557673550660887, 160.92773439739062, 59.46760687935016],
+      "projection": "EPSG:3857",
+      "isOnly2DMap":true
+    },
+    "vectorLayer": [{
+        "layerName": "chinaMapboxDemo",
+        "layerType": "ZenMap.Layers.GaoDeLayer",
+        "layerOpt": {
+            "url": ["http://192.168.101.36:8888/zenview/mapbox/services/chinaMapboxDemo/MapServer/getMapboxVectorTile?&L={z}&Y={y}&X={x}&poiRaise=true"],
+            "type": "vector",
+            "isBaseLayer": true,
+            "isVectorTile": true,
+            "isVectorLayer": true,
+            "maxZoom": 17,
+            "minZoom": 4
+        }
+    }
+    ],
+    "sattilateLayer": [{
+        "layerName": "gaodexian1",
+        "layerType": "ZenMap.Layers.GaoDeLayer",
+        "layerOpt": {
+            "url": ["http://webst02.is.autonavi.com/appmaptile??lang=zh_cn&size=1&scale=1&style=6&Z={z}&Y={y}&X={x}"]
+        }
+    }],
+    "url":"/zenviewMap/zenview/"
+  },
+  "threeDConfig":{
+    "108100000008":{
+      "url" : "/zenviewMap/zen3dMap/model/jindunxiaoqu/config",
+      "orientation": {
+        "heading": 5.9798435339927165, 
+        "pitch": -0.528992227920118, 
+        "roll": 6.283185307179544
+      },
+     "position":[112.72187078222116, 38.44216898940005, 263.7313385981849]
+    }
+  }
+}

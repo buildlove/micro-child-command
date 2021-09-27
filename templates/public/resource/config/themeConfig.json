@@ -1,0 +1,73 @@
+{
+  "mode": "default",
+  "themeClass": "default",
+  "vars": {
+    "global": [
+      "primary:#1ecbce",
+      "primary-light:#4be8eb",
+      "primary-dark:#16b1bd",
+      "danger:#ff6161",
+      "danger-dark:#ff5252",
+      "danger-light:#ff837d",
+      "success:#25dc9b",
+      "success-dark:#0fc484",
+      "success-light:#50e9b2",
+      "text-color:#333",
+      "text-light-color:#666",
+      "text-dark-color:#000",
+      "link:#44aaff",
+      "fs-small:12px",
+      "fs:12px",
+      "fs-large:16px",
+      "icon:#8899bb",
+      "disabled:#999",
+      "bd:#dbe1ea"
+    ],
+    "nav": ["nav-height:44px", "nav-bg:#001529", "nav-bd-color:#001529"],
+    "tabbar": [
+      "tab-height:44px",
+      "tab-bg:#dbe1ea",
+      "tab-item-bg:#e7ecf2",
+      "tab-item-color:#919fb8",
+      "tab-item-selected-bg:#f3f6f9",
+      "tab-item-selected-color:#1ecbce"
+    ],
+    "drawer": [
+      "drawer-title-height:44px",
+      "drawer-title-bg:#fff",
+      "drawer-title-bd-color:#e8e8e8",
+      "drawer-action-bar-height:44px",
+      "drawer-action-bar-bg:#fff",
+      "drawer-action-bar-bd-color:#e8e8e8",
+      "drawer-content-bg:#f3f6f9"
+    ],
+    "modal": [
+      "modal-title-height:44px",
+      "modal-title-bg:#fff",
+      "modal-title-bd-color:#e8e8e8",
+      "modal-action-bar-height:44px",
+      "modal-action-bar-bg:#fff",
+      "modal-action-bar-bd-color:#e8e8e8",
+      "modal-content-bg:#f3f6f9"
+    ],
+    "card": [
+      "card-image-radius:0px",
+      "card-image-bg:#dbe1ea",
+      "card-radius:0px",
+      "card-content-bg:#fff",
+      "card-shadow:0 0 4px rgba(0,0,0,0.2)",
+      "card-bd-color:#dbe1ea",
+      "card-hover-bd-color:#1ecbce",
+      "card-footer-bg: #dbe1ea"
+    ],
+    "contentLayout": [
+      "content-box-bg:transparent",
+      "content-two-column-box-left-bg:#fff",
+      "content-two-column-box-right-bg:#f0f2f5",
+      "content-info-box-bg:#fff",
+      "content-info-box-bd-color:#dbe1ea",
+      "content-info-box-title-bg:transparent",
+      "content-info-box-title-height:40px"
+    ]
+  }
+}

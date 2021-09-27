@@ -1,0 +1,19 @@
+{
+  "url": "http://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
+  "subdomains": ["1", "2", "3", "4"],
+  "crs": "EPSG3857",
+  "layerOptions": {
+    "center": [118.767413, 32.041544],
+    "maxZoom": 18,
+    "minZoom": 3,
+    "zoom": 5,
+    "zoomOffset": 0
+  },
+  "bufferOptions": {
+    "distance": 50
+  },
+  "maxBounds": [
+    [3.31743, 66.749529],
+    [56.353861, 138.55617]
+  ]
+}

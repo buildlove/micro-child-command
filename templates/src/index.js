@@ -1,32 +1,48 @@
-import './public-path';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
-import './index.less';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { logger } from '@zenview/micro-utils';
+import * as serviceWorker from './serviceWorker';
+import { IconFont } from '@zenview/micro-components';
+import './public-path';
+import './index.less';
 
-function render(props) {
-  const { container } = props;
-  ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, container ? container.querySelector('#root') : document.querySelector('#root'));
+IconFont.registerIconFont('/micro-apps/micro-dep-librarys/font/icon-font.js');
+
+function render({ container, ...props }) {
+  // window._IS_RUN_MICRO_BASIC ? <App {...props} /> : <InitialConfig>{(isUpdate) => (!isUpdate ? <App {...props} /> : null)}</InitialConfig>
+  ReactDOM.render(
+    <App {...props} />,
+    container ? container.querySelector('#demoMap') : document.querySelector('#demoMap')
+  );
 }
 
-if (!window.__POWERED_BY_QIANKUN__) {
+window._IS_RUN_MICRO_MODULE = true;
+
+if (!window._IS_RUN_MICRO_BASIC) {
   render({});
 }
 
 export async function bootstrap() {
-  console.log('[react17] react app bootstraped');
+  logger.debug('micro-demo-map app bootstraped');
 }
 
 export async function mount(props) {
-  console.log('[react17] props from main framework', props);
+  logger.debug('micro-demo-map app mount', props);
+  render(props);
+}
+
+export async function update(props) {
+  logger.debug('micro-demo-map app update', props);
   render(props);
 }
 
 export async function unmount(props) {
   const { container } = props;
-  ReactDOM.unmountComponentAtNode(container ? container.querySelector('#root') : document.querySelector('#root'));
+  ReactDOM.unmountComponentAtNode(container ? container.querySelector('#demoMap') : document.querySelector('#demoMap'));
 }
 
-registerServiceWorker();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

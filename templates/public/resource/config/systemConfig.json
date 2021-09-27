@@ -1,0 +1,33 @@
+{
+  "systemName": "智慧云眼",
+  "systemLogo": "/resource/image/login/Logo_gongan.svg",
+  "parterLogo2": "/resource/image/login/Logo_CloudEye.svg",
+  "loginBackground": "/resource/image/login/Login_custom_bg.jpg",
+  "icp": [["Copyright 2020"], ["深圳羚羊极速科技有限公司"], ["版权所有"], ["粤ICP备16124741号-1", "http://beian.miit.gov.cn/"]],
+  "addressCode": "360100,江西,南昌",
+  "loginMode": "lingmou",
+  "openSocket": true,
+  "customPlace": {
+    "placeId": "1203201000000000000",
+    "placeName": "南京",
+    "name": "nanjing"
+  },
+  "chromeDownloadUrl": "/resource/file/chrome.zip",
+  "dataRetention": 3,
+  "microService": {
+    "user": true,
+    "device": true,
+    "message": true,
+    "place": true,
+    "alarm": true,
+    "cyqz": true,
+    "wifi": true,
+    "vehicle": true,
+    "log": true,
+    "bigdata": true
+  },
+  "funcConfig": {
+    "videoPlanGroup": false
+  },
+  "privateKey": "QWER12qw"
+}
