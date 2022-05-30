@@ -1,6 +1,6 @@
 import React from 'react'
-import LoaderMap from "@src/components/LoadMixMap/LoaderMap";
-import InitMap from "@src/components/LoadMixMap/InitMap";
+// import LoaderMap from "@src/components/LoadMixMap/LoaderMap";
+// import InitMap from "@src/components/LoadMixMap/InitMap";
 import {Button} from 'antd'
 
 function Home() {
@@ -10,16 +10,16 @@ function Home() {
     console.log(mapInstantRef)
   }
 
-  const afterCreateMap = ()=> {
-    console.log(mapInstantRef)
-  }
+  // const afterCreateMap = ()=> {
+  //   console.log(mapInstantRef)
+  // }
 
   return (
     <>
       <Button onClick={testBtn}>测试按钮</Button>
-      <LoaderMap>
+      {/* <LoaderMap>
         <InitMap ref={mapInstantRef} callBack={afterCreateMap}></InitMap>
-      </LoaderMap>
+      </LoaderMap> */}
     </>
   );
 }

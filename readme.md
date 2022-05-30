@@ -5,7 +5,7 @@
 ```
 
 npm install -g micro-child-command
-liyang-cli myapp(myapp 可自定义)
+liyang-cli myapp
 
 ```
 
